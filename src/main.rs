@@ -1,3 +1,6 @@
+//import public module game
+pub mod game;
+//
 use std::io;
 
 fn main() {
@@ -7,4 +10,5 @@ fn main() {
         .read_line(&mut guess)
         .expect("Failed to take in input");
     println!("{guess}");
+    game::game::gamer::game();
 }
